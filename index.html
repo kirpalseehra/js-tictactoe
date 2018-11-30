@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" async></script>
+  <script src="index.js" async></script>
 </head>
 
 <body>
-  <button id="reset">Reset Board</button>
+  <!-- <button id="reset">Reset Board</button>
   <h2 class="playerTurn">It is X's turn</h2>
 
 
@@ -18,27 +18,58 @@
   <table>
     <thead>
       <tr>
-        <td data-num="0"></td>
-        <td data-num="1"></td>
-        <td data-num="2"></td>
+        <td data-num="0" class="innerSquare"></td>
+        <td data-num="1" class="innerSquare"></td>
+        <td data-num="2" class="innerSquare"></td>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td data-num="3"></td>
-        <td data-num="4"></td>
-        <td data-num="5"></td>
+        <td data-num="3" class="innerSquare"></td>
+        <td data-num="4" class="innerSquare"></td>
+        <td data-num="5" class="innerSquare"></td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
-        <td data-num="6"></td>
-        <td data-num="7"></td>
-        <td data-num="8"></td>
+        <td data-num="6" class="innerSquare"></td>
+        <td data-num="7" class="innerSquare"></td>
+        <td data-num="8" class="innerSquare"></td>
       </tr>
     </tfoot>
-  </table>
+  </table> -->
+  <div class="container">
 
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Tic Tac Toe Game</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Welcome to Tic Tac Toe!</h3>
+            <p>It’s time to choose your figure.</p>
+            <p id="test"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="x" class="btn" data-dismiss="modal" onClick="setFig(this.id)"><span class="fa fa-times"><span></button>
+            <button type="button" id="o" class="btn" data-dismiss="modal" onClick="setFig(this.id)"><span class="fa fa-circle-o"><span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-index="1"></div>
+      <div class="card" data-index="2"></div>
+      <div class="card" data-index="3"></div>
+      <div class="card" data-index="4"></div>
+      <div class="card" data-index="5"></div>
+      <div class="card" data-index="6"></div>
+      <div class="card" data-index="7"></div>
+      <div class="card" data-index="8"></div>
+      <div class="card" data-index="9"></div>
+    </div>
 
 </body>
 
